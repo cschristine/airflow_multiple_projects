@@ -21,9 +21,8 @@ from pendulum import datetime
     # run will be for the next 30 mins, per the its schedule
     catchup=False,
     default_args={
-        "retries": 3,  # If a task fails, it will retry 3 times.
+        "retries": 2,  # If a task fails, it will retry 2 times.
     },
-    tags=["example"] 
 )  # If set, this tag is shown in the DAG view of the Airflow UI
 def example_dag_basic():
     """
