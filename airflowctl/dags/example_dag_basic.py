@@ -23,6 +23,7 @@ from pendulum import datetime
     default_args={
         "retries": 3,  # If a task fails, it will retry 3 times.
     },
+    tags=["example"] 
 )  # If set, this tag is shown in the DAG view of the Airflow UI
 def example_dag_basic():
     """
